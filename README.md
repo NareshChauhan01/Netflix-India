@@ -5,11 +5,6 @@ A responsive Netflix India Homepage Clone built using HTML, CSS, and JavaScript.
 ## 🚀 Live Demo
 https://nareshchauhan01.github.io/Netflix-India/
 
-
-## 📸 Screenshot
-
-
-
 ## 🛠️ Technologies Used
 
 - HTML5

@@ -10,8 +10,55 @@
 </head>
 
 <body>
-  Hello Jee I am Netflix
+  <!-- Hero Section Start -->
+  <header>
+    <video class="hero-section-video" autoplay muted loop playsinline oncanplay="this.playbackRate = 1;">
+      <source src="./assets/netflix.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+
+
+    <nav class="flex">
+      <!-- Logo -->
+      <img src="assets/imglogo.png" width="200" height="70" alt="Netflix Logo">
+
+      <div class="">
+        <div class="language-select flex ">
+          <img src="assets/lang.png" alt="language Logo" width="30px" height="30px">
+
+          <select>
+            <option value="english">English</option>
+            <option value="hindi">हिंदी</option>
+          </select>
+        </div>
+        <button class="btn-sign">Sign In</button>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Unlimited movies,<br /> shows, and more</h1>
+      <p>Starts at ₹149. Cancel at any time.</p>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="email-form">
+        <input type="email" placeholder="Enter Email">
+        <button class="btn-get-started">
+          Get Started
+          <span>
+            <i class="fa-solid fa-greater-than"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+
+
+  </header>
+  <!-- Hero Section End -->
   <script src="js/script.js"></script>
+
+  <script src="https://kit.fontawesome.com/fea35417d2.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
