@@ -2,62 +2,163 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix India</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="./assets/faviconicon.svg">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Netflix India</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/png" href="./assets/faviconicon.svg">
 </head>
 
 <body>
-  <!-- Hero Section Start -->
-  <header>
-    <video class="hero-section-video" autoplay muted loop playsinline oncanplay="this.playbackRate = 1;">
-      <source src="./assets/netflix.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+   <!-- Hero Section Start -->
+   <header>
+      <video class="hero-section-video" autoplay muted loop playsinline oncanplay="this.playbackRate = 1;">
+         <source src="./assets/netflix.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
 
-    <div class="overlay"></div>
+      <div class="overlay"></div>
 
 
-    <nav class="flex">
-      <!-- Logo -->
-      <img src="assets/imglogo.png" width="200" height="70" alt="Netflix Logo">
+      <nav class="flex">
+         <!-- Logo -->
+         <img src="assets/imglogo.png" width="200" height="70" alt="Netflix Logo">
 
-      <div class="">
-        <div class="language-select flex ">
-          <img src="assets/lang.png" alt="language Logo" width="30px" height="30px">
+         <div class="">
+            <div class="language-select flex ">
+               <img src="assets/lang.png" alt="language Logo" width="30px" height="30px">
 
-          <select>
-            <option value="english">English</option>
-            <option value="hindi">हिंदी</option>
-          </select>
-        </div>
-        <button class="btn-sign">Sign In</button>
+               <select>
+                  <option value="english">English</option>
+                  <option value="hindi">हिंदी</option>
+               </select>
+            </div>
+            <button class="btn-sign">Sign In</button>
+         </div>
+      </nav>
+
+      <div class="hero-content">
+         <h1>Unlimited movies,<br /> shows, and more</h1>
+         <p>Starts at ₹149. Cancel at any time.</p>
+         <p>Ready to watch? Enter your email to create or restart your membership.</p>
+         <div class="email-form">
+            <input type="email" placeholder="Enter Email">
+            <button class="btn-get-started">
+               Get Started
+               <span>
+                  <i class="fa-solid fa-greater-than"></i>
+               </span>
+            </button>
+         </div>
       </div>
-    </nav>
-
-    <div class="hero-content">
-      <h1>Unlimited movies,<br /> shows, and more</h1>
-      <p>Starts at ₹149. Cancel at any time.</p>
-      <p>Ready to watch? Enter your email to create or restart your membership.</p>
-      <div class="email-form">
-        <input type="email" placeholder="Enter Email">
-        <button class="btn-get-started">
-          Get Started
-          <span>
-            <i class="fa-solid fa-greater-than"></i>
-          </span>
-        </button>
-      </div>
-    </div>
 
 
-  </header>
-  <!-- Hero Section End -->
-  <script src="js/script.js"></script>
+   </header>
+   <!-- Hero Section End -->
 
-  <script src="https://kit.fontawesome.com/fea35417d2.js" crossorigin="anonymous"></script>
+
+   <!-- Curve Section Start -->
+   <div class="curve"></div>
+   <!-- Curve Section End -->
+
+
+   <!-- Main Start -->
+   <main>
+      <!-- Trending Section Start -->
+      <section class="trending-section">
+         <h2 class="trending-title">Trending Now</h2>
+
+         <div class="movie-row">
+            <div class="movie-card">
+               <img src="assets/img1.webp" alt="IMAGE 1">
+               <div class="rank">1</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img2.webp" alt="IMAGE 2">
+               <div class="rank">2</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img3.webp" alt="IMAGE 3">
+               <div class="rank">3</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img4.webp" alt="IMAGE 4">
+               <div class="rank">4</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img5.webp" alt="IMAGE 5">
+               <div class="rank">5</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img6.webp" alt="IMAGE 6">
+               <div class="rank">6</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img7.webp" alt="IMAGE 7">
+               <div class="rank">7</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img8.webp" alt="IMAGE 8">
+               <div class="rank">8</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img9.webp" alt="IMAGE 9">
+               <div class="rank">9</div>
+            </div>
+            <div class="movie-card">
+               <img src="assets/img10.webp" alt="IMAGE 10">
+               <div class="rank">10</div>
+            </div>
+         </div>
+      </section>
+      <!-- Trending Section End -->
+
+      <!-- Reasons Section Start -->
+      <section class="reasons-section">
+         <h2 class="section-title">More reasons to join</h2>
+
+         <div class="reasons-grid">
+            <div class="reason-card">
+               <h3>Enjoy on your TV</h3>
+               <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+               <div class="card-icon icon-tv"></div>
+            </div>
+
+            <div class="reason-card">
+               <h3>Download your shows to watch offline</h3>
+               <p>Save your favourites easily and always have something to watch.</p>
+               <div class="card-icon icon-download"></div>
+            </div>
+
+            <div class="reason-card">
+               <h3>Watch everywhere</h3>
+               <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+               <div class="card-icon icon-telescope"></div>
+            </div>
+
+            <div class="reason-card">
+               <h3>Create profiles for kids</h3>
+               <p>Send kids on adventures with their favourite characters in a space made just for them — free with
+                  your membership.</p>
+               <div class="card-icon icon-kids"></div>
+            </div>
+         </div>
+
+      </section>
+      <!-- Reasons Section End -->
+
+   </main>
+   <!-- Main End -->
+
+
+
+
+
+
+
+
+   <script src="js/script.js"></script>
+   <script src="https://kit.fontawesome.com/fea35417d2.js" crossorigin="anonymous"></script>
 
 </body>
 

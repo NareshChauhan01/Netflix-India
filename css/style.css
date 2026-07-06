@@ -15,8 +15,11 @@
 }
 
 body {
+  background-color: var(--primary-black);
   font-family: "Helvetica", sans-serif;
   width: 100%;
+  color: var(--white);
+  overflow-x: hidden;
 }
 
 /* Utility Classes */
@@ -132,7 +135,7 @@ nav .btn-sign {
   cursor: pointer;
   white-space: nowrap;
   transition: .2S ease-out;
-  
+
 }
 
 nav .btn-sign:hover {
@@ -227,3 +230,143 @@ header .hero-content .email-form input {
 }
 
 /* Hero Section End */
+
+
+/* Curve Section Start */
+/* .curve {
+  position: relative;
+  height: 50px;
+  background: radial-gradient(ellipse at top, #081c8c 0%, #000 70%);
+  overflow: hidden;
+  z-index: 5;
+  margin-top: -5px;
+}
+
+.curve::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border-top: 4px solid var(--primary-red);
+  background: radial-gradient(ellipse at 50% 0%, rgba(229, 9, 20, 0.35) 0%, rgba(0, 0, 0, 0) 65%);
+  pointer-events: none;
+} */
+
+.curve {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin-top: -35px;
+  overflow: hidden;
+}
+
+/* Blue Glow */
+.curve {
+  position: relative;
+  height: 50px;
+  background: radial-gradient(ellipse at top, #081c8c 0%, #000 70%);
+  overflow: hidden;
+  z-index: 5;
+  margin-top: -5px;
+}
+
+.curve::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  border-top: 4px solid #e50914;
+  background: radial-gradient(ellipse at 50% 0%, rgba(229, 9, 20, 0.35) 0%, rgba(0, 0, 0, 0) 65%);
+  pointer-events: none;
+}
+
+/* Curve Section End */
+
+/* Tranding Section Start */
+.trending-section {
+  max-width: 1450px;
+  width: 100%;
+  margin: 40px auto 80px auto;
+  padding: 0 40px;
+}
+
+.trending-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.movie-row {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 20px 20px 20px 30px;
+}
+
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 180px;
+  height: 250px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  /* border-radius: 8px; */
+  will-change: transform, box-shadow, filter;
+  transition:
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    filter 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.12);
+  z-index: 12;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 4px 15px rgba(229, 9, 20, 0.2);
+  filter: brightness(1.1) contrast(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: border-radius 0.3s ease;
+}
+
+.movie-card:hover img {
+  border-radius: 6px;
+}
+
+.rank {
+  position: absolute;
+  left: -6px;
+  bottom: 10px;
+  font-size: 6rem;
+  font-weight: 900;
+  font-weight: 900;
+  color: #000;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  user-select: none;
+}
+
+/* Tranding Section End */
+
+/* Reasons Section Start */
+
+/* Reasons Section End */
